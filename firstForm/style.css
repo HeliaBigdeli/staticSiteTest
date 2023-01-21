@@ -1,0 +1,65 @@
+body {
+    font-family: 'Special Elite', cursive;
+}
+
+form .fa {
+    margin-top: -2%;
+    padding: 0% 5% 0% 3%;
+}
+
+form .fa.fa-user-o {
+    font-weight: 600;
+}
+
+.login {
+    background-image: url(girl.png);
+    background-repeat: no-repeat;
+    padding: 3% 0% 10% 42%;
+    background-size: contain;
+    background-position-x: 30%;
+    margin: 2% 10%;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 0px 20px #e7d6e8;
+    background-color: #e7d6e854;
+    padding: 2%;
+    color: #444444;
+}
+
+label {
+    margin-bottom: 1%;
+    display: flex;
+}
+
+input {
+    margin-bottom: 2%;
+    display: flex;
+    outline: none;
+    border-color: #ba9fbc2e;
+}
+
+input:focus {
+    background-color: #d8eae6;
+}
+
+button {
+    border-color: #ba9fbc2e;
+    background-color:#e7d6e8;
+    color: #444444;
+    font-family: 'Special Elite', cursive;
+    padding: 2% 5%;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d8eae6;
+    cursor: pointer;
+    transition: 0.5s; /*adding effect*/
+}
+
+.marTop {
+    margin-top: 5%;
+}

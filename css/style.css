@@ -1,0 +1,372 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Pacifico', cursive;
+    font-family: 'Special Elite', cursive;  // titles */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #d8eae6;
+}
+
+header {
+    background-color: #d8eae6;
+}
+
+a {
+    text-decoration: none;
+    color: #025142;
+}
+
+ul {
+    padding: 0%;
+}
+
+.mainlogo {
+    width: 15%;
+    float: left;
+    padding: 3% 0% 2% 5%;
+}
+
+.mainlogo img {
+    width: 100%;
+}
+
+.topmenu {
+    width: 72%;
+    padding-top: 3%;
+    text-align: right;
+    position: fixed;
+    right: 4%;
+}
+
+.topmenu li {
+    display: inline;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.topmenu > ul > li > a {
+    padding: 1% 2%;
+    background-color: #e7d6e8;
+}
+
+.dropDown {
+    display: none;
+    background-color: #e7d6e8;
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    text-align: center;
+    padding: 8% 0%;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 90%;
+}
+
+.dropDownLink:hover > .dropDown {
+    display: block;
+}
+
+.dropDownLink {
+    position: relative;
+}
+
+.dropDown > ul > li {
+    display: block;
+}
+
+.dropDown > ul > li > a {
+    padding: 0% 25%;
+}
+
+.dropDown > ul > li > a:hover {
+    border-bottom: 1px solid #025142;
+}
+
+.clearfix {
+    width: 100%;
+    clear: both;
+}
+
+.maintitle {
+    text-align: center;
+    font-size: 150%;
+    width: 100%;
+    color: #444444;
+    font-family: 'Special Elite', cursive;
+}
+
+.video {
+    text-align: center;
+}
+
+.video img {
+    border-radius: 5%;
+    box-shadow: 15px 15px 0px #e7d6e8;
+}
+
+.extrainfo {
+    color: #1d2121;
+    text-align: center;
+    width: 40%;
+    font-size: 110%;
+    font-weight: bold;
+    line-height: 150%;
+    padding: 2% 0%;
+    margin: 0px auto;
+    display: block; /*making sure*/
+}
+
+.row {
+    width: 100%;
+    padding-top: 5%;
+}
+
+.row h2 {
+    font-family: 'Special Elite', cursive;
+}
+
+.col-2 {
+    width: 66%;
+    float: left;
+    text-align: justify;
+    padding: 1% 2%;
+}
+
+.col-1 {
+    width: 33%;
+    float: left;
+}
+
+.col-1 img {
+    width: 100%;
+}
+
+.register {
+    background-color: #444444;
+    color: snow;
+    padding: 3%;
+    text-align: center;
+    border-radius: 20px;
+    margin: 5% 2%;
+    box-shadow: 0px 0px 11px 5px gainsboro;
+}
+
+.register h3 {
+    font-size: 190%;
+    font-family: 'Special Elite', cursive;
+}
+
+.register input {
+    padding: 1% 4%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #d8eae6;
+    font-size: 105%;
+}
+
+.register input:hover {
+    cursor: pointer;
+    background-color: #e7d6e8;
+}
+
+.footer {
+    background-color: #e7d6e8;
+    width: 100%;
+    padding: 2% 0%;
+}
+
+.oneThird {
+    width: 33%;
+}
+
+.social {
+    float: left;
+}
+
+.media {
+    padding: 2% 5%;
+    display: inline-block;
+}
+
+.media img {
+    background-color: #444444;
+    padding: 5%;
+    border-radius: 50%;
+    margin-left: 20%;
+}
+
+.media span {
+    display: block;
+}
+
+.social p {
+    text-align: center;
+    padding-top: 1%;
+    font-weight: bold;
+}
+
+.girl {
+    text-align: center;
+}
+
+.girl img {
+    width: 18%;
+}
+
+footer {
+    position: relative;
+}
+
+.return {
+    position: absolute;
+    background-color: #d8eae6;
+    color: #444444;
+    border-radius: 50%;
+    left: 88%;
+    top: -20%;
+    padding: 1%;
+}
+
+/*L lap*/
+@media screen and (min-width: 1440px) {
+    p {
+        line-height: 150%;
+        font-weight: bold;
+    }
+
+    .return {
+        top: -12%;
+    }
+
+    .media {
+        width: 22%;
+    }
+}
+
+/*laptop*/
+@media screen and (max-width: 1439px) and (min-width:1023px) {
+    .col-1 img {
+        margin-top: 25%;
+    }
+
+    .return {
+        top: -13%;
+    }
+
+    .media {
+        width: 20%;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 1023px) and (min-width: 541px) {
+    .topmenu li {
+        display: block;
+        margin-top: 3%;
+        font-size: 95%;
+    }
+
+    .topmenu span {
+        display: none;
+    }
+
+    .mainlogo {
+        width: 20%;
+        padding-top: 8%;
+    }
+
+    .extrainfo {
+        width: 70%;
+    }
+
+    .col-1 {
+        width: 50%;
+        margin-top: 22%;
+    }
+
+    .col-2 {
+        width: 50%;
+    }
+
+    .return {
+        top: -10%;
+    }
+
+    .oneThird {
+        width: 50%;
+    }
+
+    .media {
+        width: 20%;
+    }
+}
+
+/*mobile phone*/
+@media screen and (max-width: 540px) and (min-width: 240px) {
+    .topmenu li {
+        display: block;
+        margin-top: 3%;
+        font-size: 95%;
+    }
+
+    .topmenu span {
+        display: none;
+    }
+
+    .mainlogo {
+        width: 25%;
+        padding-top: 10%;
+    }
+
+    .extrainfo {
+        width: 75%;
+    }
+
+    .col-1, .col-2 {
+        width: 100%;
+    }
+
+    .col-1 img, .col-2 img {
+        display: none;
+    }
+
+    .return {
+        top: -5%;
+    }
+
+    .oneThird {
+        width: 100%;
+    }
+
+    .video img {
+    width: 100%;
+    }
+
+    .media {
+        width: 24%;
+    }
+
+    .login {
+        background-image: revert;
+        padding: 10% 20%;
+    }
+
+    .signUp form {
+        width: 100%;
+    }
+
+    .signUp .col-2 {
+        width: 100%;
+        padding: 4% 10%;
+    }
+}
